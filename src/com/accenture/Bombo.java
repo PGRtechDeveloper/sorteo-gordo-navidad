@@ -12,14 +12,12 @@ public class Bombo {
     }
 
     /**
-    * Comprueba que haya bolas en el bombo, mezcla aleatoriamente su contenido 
-    * con rotarBombo(), extrae una bola y por último la elimina del bombo.
+    * Comprueba que haya bolas en el bombo, extrae una bola y por último la elimina del bombo.
     * @return una bola.
     */
     public Bola extraerBola() {
         Bola bola = null;
         if (quedanBolas()) {
-            //rotarBombo();
             bola = this.bombo.get(0);
             this.bombo.remove(0);
         }else{
